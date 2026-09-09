@@ -1,7 +1,10 @@
 # Noktaları Sırala — Gizlilik Politikası
 
-**Yürürlük tarihi:** 10 Eylül 2026  
+**Yürürlük tarihi:** 10 Eylül 2026
+
 **Uygulama:** Noktaları Sırala
+
+**Geliştirici ve veri sorumlusu:** Alperen Şahin
 
 ## Kısa özet
 
@@ -13,7 +16,7 @@ Seçilen dil, açılan kademeler, seçilen kademe, en iyi süreler ve çevrim i�
 
 ## Game Center ve oyun verileri
 
-Oyuncu doğrulama, otomatik eşleştirme, çevrim içi düello ve liderlik tablosu Apple'ın Game Center hizmetini kullanır. Bu özellikler kullanıldığında oyuncu takma adı, Game Center kimliği, skor, eşleşme ve oyun ilerleme verileri Apple tarafından işlenebilir. Düello sırasında gerekli oyun ilerleme mesajları Game Center aracılığıyla eşleşen cihazlar arasında iletilir.
+Uygulama açıldığında Game Center oturum durumunu kontrol eder. Oyuncu doğrulama, otomatik eşleştirme, çevrim içi düello ve liderlik tablosu Apple'ın Game Center hizmetini kullanır. Bu özellikler kullanıldığında uygulama Game Center görünen adını ve oyuncu kimliğini okuyabilir; Apple skor, eşleşme ve oyun verilerini işleyebilir. Düello sırasında kademe/oyun düzeni, ilerleme ve bitirme süresi gibi gerekli oyun mesajları Game Center aracılığıyla eşleşen cihazlar arasında iletilir. Bu geçici eşleşme verileri geliştiriciye ait bir sunucuda saklanmaz.
 
 Geliştirici ayrı bir kullanıcı hesabı veya oyun veri tabanı işletmez; Game Center verilerini reklam amacıyla kullanmaz ve satmaz. Apple'ın veri işleme uygulamaları kendi [Gizlilik Politikası](https://www.apple.com/legal/privacy/) ve Game Center koşullarına tabidir.
 
@@ -23,11 +26,13 @@ Uygulama reklam SDK'sı, üçüncü taraf analiz SDK'sı veya uygulamalar arası
 
 ## Çocukların gizliliği
 
-Uygulama sohbet veya kullanıcı tarafından oluşturulan içerik özelliği sunmaz. App Store yaş derecelendirmesi ülkeye veya bölgeye göre değişebilir. Geliştirici bilerek çocuklardan kişisel bilgi toplamaz.
+Uygulama sohbet veya kullanıcı tarafından oluşturulan içerik özelliği sunmaz. App Store yaş derecelendirmesi ülkeye veya bölgeye göre değişebilir. Geliştirici çocuklardan doğrudan iletişim bilgisi talep etmez. Game Center kullanımı Apple'ın hesap, aile ve yaşa uygunluk kontrollerine tabidir.
 
 ## Seçimler ve silme
 
-Yerel oyun verilerini silmek için uygulamayı cihazdan kaldırabilirsiniz. Game Center hesabı, görünürlük ve skorlarla ilgili seçenekler Apple hesabı ve Game Center ayarlarından yönetilir.
+Yerel oyun verilerini silmek için uygulamayı cihazdan kaldırabilirsiniz. Eşleşme sırasında uygulamanın belleğinde bulunan geçici oyun verileri eşleşme sona erdiğinde kalıcı bir geliştirici sunucusuna kaydedilmez.
+
+Game Center erişimini durdurmak için cihazınızda Ayarlar → Game Center bölümünden çıkış yapabilirsiniz. Apple tarafından tutulan Game Center verilerinin saklama süresini geliştirici belirlemez ve bu verileri doğrudan silemez. Apple hesabınıza ilişkin erişim veya silme taleplerini [Apple Veri ve Gizlilik](https://privacy.apple.com/) sayfasından ya da Apple Destek üzerinden yönetebilirsiniz.
 
 ## Politika değişiklikleri
 
@@ -35,7 +40,7 @@ Uygulamanın veri uygulamaları değişirse bu sayfa ve yürürlük tarihi günc
 
 ## İletişim
 
-Gizlilikle ilgili bir soru için [GitHub üzerinden destek talebi](https://github.com/sahinalperen/alperen/issues/new) oluşturabilirsiniz. Talebe kişisel veya hassas bilgi eklemeyin.
+Gizlilikle ilgili bir soru için [GitHub üzerinden destek talebi](https://github.com/sahinalperen/alperen/issues/new) oluşturabilirsiniz. GitHub hesabı gerekir ve oluşturulan talepler herkese açık olabilir. Talebe kişisel veya hassas bilgi eklemeyin.
 
 ---
 
@@ -43,14 +48,16 @@ Gizlilikle ilgili bir soru için [GitHub üzerinden destek talebi](https://githu
 
 **Effective date:** September 10, 2026
 
+**Developer and data controller:** Alperen Şahin
+
 Noktaları Sırala does not display ads, track users, or send data to a developer-operated analytics or advertising server. Language selection, unlocked stages, selected stage, best times, and a local copy of the online rating are stored on the device.
 
-Player authentication, matchmaking, online duels, and leaderboards use Apple Game Center. When these features are used, Apple may process the player's Game Center identity and display name, scores, match information, and gameplay data. Necessary gameplay messages are transmitted between matched devices through Game Center.
+The app checks Game Center authentication status when it opens. Player authentication, matchmaking, online duels, and leaderboards use Apple Game Center. The app may read the Game Center display name and player identifier; Apple may process scores, match information, and gameplay data. Necessary messages such as the stage/game layout, progress, and finish time are transmitted between matched devices through Game Center. This temporary match data is not stored on a developer-operated server.
 
 The developer does not operate a separate user-account system or gameplay database, does not sell Game Center data, and does not use it for advertising. Apple's processing is governed by its own [Privacy Policy](https://www.apple.com/legal/privacy/) and Game Center terms.
 
-The app contains no advertising SDK, third-party analytics SDK, or cross-app tracking technology. It does not provide chat or user-generated-content features.
+The app contains no advertising SDK, third-party analytics SDK, or cross-app tracking technology. It does not provide chat or user-generated-content features, and the developer does not request contact information directly from children. Game Center use is subject to Apple's account, family, and age-appropriateness controls.
 
-Deleting the app removes locally stored game data. Game Center account, visibility, and score options are managed through the Apple Account and Game Center settings.
+Deleting the app removes locally stored game data. You can stop Game Center access by signing out under Settings → Game Center. The developer does not determine Apple's retention period and cannot directly delete data held by Apple. Apple Account data access or deletion requests can be managed at [Apple Data and Privacy](https://privacy.apple.com/) or through Apple Support.
 
-For privacy questions, [open a GitHub support request](https://github.com/sahinalperen/alperen/issues/new). Do not include passwords, phone numbers, or other sensitive information.
+For privacy questions, [open a GitHub support request](https://github.com/sahinalperen/alperen/issues/new). A GitHub account is required and requests may be public. Do not include passwords, phone numbers, or other sensitive information.
