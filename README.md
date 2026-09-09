@@ -1,9 +1,10 @@
 # Noktaları Sırala
 
-Bu depo, **Noktaları Sırala** iOS ve iPadOS oyununun resmi destek ve gizlilik sayfalarını içerir.
+Bu depo, **Noktaları Sırala** iOS ve iPadOS oyununun resmî destek ve gizlilik sayfalarını içerir.
 
-- [Resmî site](https://sahinalperen.github.io/alperen/)
-- [Gizlilik Politikası](https://sahinalperen.github.io/alperen/privacy/)
-- [Destek](https://sahinalperen.github.io/alperen/support/)
+- [Gizlilik Politikası](./PRIVACY.md)
+- [Destek](./SUPPORT.md)
 - [Sorun bildir](https://github.com/sahinalperen/alperen/issues)
 
+GitHub Pages etkinleştirildiğinde mobil uyumlu site
+`https://sahinalperen.github.io/alperen/` adresinde yayınlanacaktır.
